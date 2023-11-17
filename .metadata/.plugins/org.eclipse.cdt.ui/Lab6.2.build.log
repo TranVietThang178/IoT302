@@ -1,0 +1,11 @@
+14:58:41 **** Rebuild of configuration Debug for project Lab6.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:23: warning: operation on 'a' may be undefined [-Wsequence-point]
+   14 |         int A = a++ + ++a;
+      |                       ^~~
+gcc -o Lab6.2.exe main.o 
+
+14:58:41 Build Finished. 0 errors, 1 warnings. (took 291ms)
+

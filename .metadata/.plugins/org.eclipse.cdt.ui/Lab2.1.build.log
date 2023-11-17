@@ -1,0 +1,17 @@
+08:37:25 **** Build of configuration Debug for project Lab2.1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lab2.1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\viett\STM32CubeIDE\workspace_1.13.1\Lab2.1\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab2.1.elf
+ 
+arm-none-eabi-size   Lab2.1.elf 
+arm-none-eabi-objdump -h -S  Lab2.1.elf  > "Lab2.1.list"
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	Lab2.1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.1.list
+ 
+
+08:37:26 Build Finished. 0 errors, 0 warnings. (took 349ms)
+

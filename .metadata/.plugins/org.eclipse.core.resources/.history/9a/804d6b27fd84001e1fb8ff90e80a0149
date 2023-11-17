@@ -1,0 +1,8 @@
+#include <stdio.h>
+#define RELAY_SET_ON(relay_id, relay_state)  relay_state |= (1 << relay_id)
+#define RELAY_SET_OFF(relay_id, relay_state)  relay_state &= ~(1 << relay_id)
+
+int main(void)
+{
+
+}

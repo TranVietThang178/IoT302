@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+	float i;
+	scanf("%f", &i);
+
+	if (i > 35) printf("");
+	else printf("");
+
+	getchar();
+	getchar();
+
+	return 0;
+}

@@ -1,0 +1,20 @@
+15:52:42 **** Build of configuration Debug for project Lab6.5 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/1. IMPORTANT DOCUMENTS/Learning/Internship/NUCLEO/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/1. IMPORTANT DOCUMENTS/Learning/Internship/NUCLEO/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/1. IMPORTANT DOCUMENTS/Learning/Internship/NUCLEO/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Lab6.5.elf" @"objects.list"  -lLibraries -mcpu=cortex-m4 -T"C:\Users\viett\STM32CubeIDE\workspace_1.13.1\Lab6.5\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab6.5.map" -Wl,--gc-sections -static -L"C:\1. IMPORTANT DOCUMENTS\Learning\Internship\NUCLEO\SDK_1.0.3_NUCLEO-F401RE\lib_stm" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab6.5.elf
+ 
+arm-none-eabi-size   Lab6.5.elf 
+arm-none-eabi-objdump -h -S  Lab6.5.elf  > "Lab6.5.list"
+   text	   data	    bss	    dec	    hex	filename
+   3596	     20	   1972	   5588	   15d4	Lab6.5.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab6.5.list
+ 
+
+15:52:42 Build Finished. 0 errors, 0 warnings. (took 451ms)
+

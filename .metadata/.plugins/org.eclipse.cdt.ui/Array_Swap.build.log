@@ -1,0 +1,13 @@
+10:52:19 **** Incremental Build of configuration Debug for project Array_Swap ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:41:9: error: too few arguments to function 'swap_arrays'
+   41 |         swap_arrays();
+      |         ^~~~~~~~~~~
+..\main.c:6:6: note: declared here
+    6 | void swap_arrays(int32_t *array1, int32_t *array2, uint32_t nitem1, uint32_t nitem2);
+      |      ^~~~~~~~~~~
+
+10:52:19 Build Failed. 1 errors, 0 warnings. (took 103ms)
+

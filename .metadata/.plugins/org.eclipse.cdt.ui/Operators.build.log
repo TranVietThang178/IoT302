@@ -1,0 +1,17 @@
+10:52:22 **** Rebuild of configuration Debug for project Operators ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:7:10: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    7 |         a, b = 1, 2, 3;
+      |          ^
+..\Main.c:7:17: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+    7 |         a, b = 1, 2, 3;
+      |                 ^
+..\Main.c:7:20: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+    7 |         a, b = 1, 2, 3;
+      |                    ^
+gcc -o Operators.exe Main.o 
+
+10:52:22 Build Finished. 0 errors, 3 warnings. (took 288ms)
+

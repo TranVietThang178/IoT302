@@ -1,0 +1,7 @@
+11:47:29 **** Rebuild of configuration Debug for project Lab4.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab4.2.exe main.o 
+
+11:47:29 Build Finished. 0 errors, 0 warnings. (took 294ms)
+

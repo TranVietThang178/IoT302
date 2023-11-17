@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(void) {
+	float dai,rong, chu_vi, dien_tich;
+
+	printf("Chieu dai: ");
+	scanf("%f", dai);
+}

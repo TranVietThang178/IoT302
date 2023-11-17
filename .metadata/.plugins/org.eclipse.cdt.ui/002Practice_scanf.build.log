@@ -1,0 +1,7 @@
+10:52:17 **** Rebuild of configuration Debug for project 002Practice_scanf ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+g++ -o 002Practice_scanf.exe main.o 
+
+10:52:18 Build Finished. 0 errors, 0 warnings. (took 287ms)
+

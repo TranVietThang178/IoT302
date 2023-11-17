@@ -1,0 +1,26 @@
+#include <stdio.h>
+#define RELAY_SET_ON(relay_id, relay_state)  relay_state |= (1 << relay_id)
+#define RELAY_SET_OFF(relay_id, relay_state)  relay_state &= ~(1 << relay_id)
+
+int main(void)
+{
+	int relay_id, relay_state;
+
+	printf("Please enter the id of the relay: ");
+	scanf("%d", &relay_id);
+	printf("Please enter the state (0 for OFF, 1 for ON): ");
+	scanf("%d", &relay_state);
+
+	RELAY_SET_ON(relay_id, relay_state);
+
+	printf("The relay %d is ON. Updated state: %d\n", relay_id, if(relay_state) ? 1 : 0);
+
+	RELAY_SET_OFF(relay_id, relay_state);
+
+	printf("The relay %d is OFF. Updated state: %d\n", relay_id, relay_state);
+
+	getchar();
+	getchar();
+
+	return 0;
+}

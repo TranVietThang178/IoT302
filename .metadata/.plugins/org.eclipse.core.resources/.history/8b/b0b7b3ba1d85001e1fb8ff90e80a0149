@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int a, b;
+
+	printf("Number a = ");
+	scanf("%f", &a);
+	printf("Number b = ");
+	scanf("%f", &b);
+
+	printf("Average of a and b is %d\n", (a + b) >> 1);
+}

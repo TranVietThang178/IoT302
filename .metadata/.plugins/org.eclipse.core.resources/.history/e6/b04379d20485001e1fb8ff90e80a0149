@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void)
+{
+	float i;
+
+	getchar();
+	getchar();
+
+	return 0;
+}
